@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+}
+/*Mobile resolution*/
+@media screen and (max-width:750px) {
+    header{
+        background-image: url(./images/mobile/image-hero.jpg);
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+    }
+    nav .row .about_list ul{
+        display: none;
+    }
+    .header_center_content{
+        width: 80%;
+        height: 320px;
+        margin-top: 8rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 43px;
+        font-weight: 100;
+    }
+    .dropdown_ham{
+        background: transparent;
+        border: none;
+        margin-top: -5px;
+    }
+    #dropdown_close{
+        background-color: transparent;
+        border: none;
+    }
+    .drop_nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10%;
+    }
+    .immersive{
+        width: 100vw;
+    }
+    .immersive p{
+        width: 80%;
+        border: 2px solid white;
+        color: white;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 30%;
+        margin-left: 15%;
+        padding: 5%;
+    }
+
+    /*dropdown*/
+    .dropdown{
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+        transition:transform 0.3s ease-in-out;
+        transform: translateY(-100vh);
+    }
+    .dropdown_nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown_close{
+        background-color: transparent;
+        border: none;
+        margin-top: -5px;
+    }
+    .dropdown_about li{
+        font-size: 30px;
+    }
+    .dropdown_about li a:hover{
+        border-bottom: 2px solid white;
+    }
+    .show{
+        display: block;
+        transform: translateY(0);
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    /*article*/
+    
+    .interactive_title{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .interactive_content{
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .article2 .creations{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .banners .row p{
+        width: 50%;
+        position: absolute;
+        color: white;
+        margin-top: 30px;
+        margin-left: 40px;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+    }
+    .banners .row .see_all{
+        height: 40px;
+        width: 180px;
+        text-align: center;
+    }
+
+    /*footer*/
+    footer{
+        height: 100vh;
+        background-color: black;
+    }
+    .social_media{
+        display: flex;
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .desktop_article1 div{
+        display: none;
+    }
+    .banners_desktop{
+        display: none;
+    }
+    footer .tab_lap{
+        display: none;
+    }
+
+}
+
+/*tablet resolutions*/
+@media screen and (min-width:750px){
+    header{
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:100vh;        
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown_ham{
+        display: none;
+    }
+    .dropdown div{
+        display: none;
+    }
+    .about_list ul{
+        display: flex;
+        justify-content: space-around;
+        width: 40vw;
+    }
+    .about_list ul li a:hover{
+        border-bottom: 2px solid white;
+    }
+    #dropdown_ham{
+        background: transparent;
+        border: none;
+    }
+    .immersive p{
+        height: 45vh;
+        width: 65%;
+        color: white;
+        border: 2px solid white ;
+        margin: 20% 13%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 60px;
+        font-weight: 100;
+    }
+    .article1{
+        display: none;
+    }
+    article .desktop_article1{
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+    .article1_interactive_text{
+        background-color: rgb(255, 255, 255);
+        height: 60%;
+        width: 50%;
+        position: absolute;
+        margin-left:40% ;
+        z-index: 100;       
+    }
+    .article1_interactive_text .interactive_content{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .article2 .banners{
+        display: none;
+    }
+    .banners_desktop .banners_text1{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin-top: 20%;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .banners_desktop .banners_text2{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        line-height: 25px;
+        margin-top: 20%
+        ;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .banners_desktop .banners_see_all{
+        height: 45px;
+        width: 200px;
+        background-color: transparent;
+        border: 2px solid black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    footer{
+        background-color: black;
+        height: 13rem;
+    }
+    footer .footer_mobile div{
+        display: none;
+    }
+    footer .footer_mobile div img{
+        display: none;
+    }
+    .desktop_footer_about li a{
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
